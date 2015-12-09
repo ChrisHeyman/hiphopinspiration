@@ -18,7 +18,7 @@ struct FactBook {
         "\"I sell ice in the winter, I sell fire in hell, I am a hustler baby, I’ll sell water to a well\"\n - Jay Z -- You Don’t know.",
         "\"Remind yourself. Nobody built like you, you design yourself.\"\n - Jay Z -- A Dream",
         "\"I give a f**k about what brand you are. I’m concerned what type of man you are. What your principles and standards are.\"\n - Mos Def – Sunshine",
-        "\"Never looking back or too far in front of me. The present is a gift, and I just wanna BE.\"\n - Common -- BE",
+        "\"Never looking back or too far in front of me. The present is a gift, and I just wanna BE.\"\n - Common",
         "\"Hip-hop isn't as complex as a woman is.\"\n - Talib Kweli",
         "\"Remember one thing Through every dark night, there's a bright day after that. So no matter how hard it get, stick your chest out. Keep your head up, and handle it.\"\n - Tupac",
         "\"Life is a wheel of fortune and it's my turn to spin it.\"\n - Tupac",
