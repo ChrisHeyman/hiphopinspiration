@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HipHopInspiration" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="HipHopInspiration" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -18,20 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNE-2z-Tb0">
-                                <rect key="frame" x="44" y="200" width="216" height="200"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="216" id="Y9t-Lt-f7z"/>
-                                    <constraint firstAttribute="height" constant="200" id="vkE-hs-Ovb"/>
-                                </constraints>
-                                <string key="text">"YOU CAN SPEND HOURS , DAYS , WEEKS , OR EVEN MONTHS TRYING TO PICK UP THE PIECES AND FIGURE OUT WHAT WENT WRONG OR YOU CAN JUST LEAVE THE PIECES ON THE FLOOR AND MOVE THE F@CK ON\" - 2 PAC</string>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xrf-ic-YFn">
-                                <rect key="frame" x="48" y="440" width="216" height="61"/>
+                                <rect key="frame" x="52" y="440" width="216" height="61"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -56,16 +44,38 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJK-Su-gcq">
+                                <rect key="frame" x="270" y="32" width="22" height="22"/>
+                                <animations/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="sYw-XR-Ugj" kind="modal" identifier="GoToSettings" modalTransitionStyle="crossDissolve" id="s9N-B3-o4s"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNE-2z-Tb0">
+                                <rect key="frame" x="32" y="156" width="256" height="256"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="256" id="U7R-ff-S6O"/>
+                                    <constraint firstAttribute="width" constant="256" id="mzW-Gj-Stp"/>
+                                </constraints>
+                                <string key="text">"YOU CAN SPEND HOURS , DAYS , WEEKS , OR EVEN MONTHS TRYING TO PICK UP THE PIECES AND FIGURE OUT WHAT WENT WRONG OR YOU CAN JUST LEAVE THE PIECES ON THE FLOOR AND MOVE THE F@CK ON\" - 2 PAC</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.3529411764705882" green="0.73333333333333328" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="xNE-2z-Tb0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0YQ-ng-B3g"/>
                             <constraint firstItem="RHp-AI-jbR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="5Fn-33-2ZC"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Xrf-ic-YFn" secondAttribute="bottom" constant="67" id="8cH-jF-XpV"/>
-                            <constraint firstItem="xNE-2z-Tb0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="180" id="J0O-eb-hDf"/>
+                            <constraint firstItem="KJK-Su-gcq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="12" id="G7h-91-VpW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KJK-Su-gcq" secondAttribute="trailing" constant="12" id="MdW-s1-3Ke"/>
+                            <constraint firstItem="xNE-2z-Tb0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bFn-cb-o9G"/>
+                            <constraint firstItem="Xrf-ic-YFn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dn7-JM-Fuq"/>
                             <constraint firstItem="RHp-AI-jbR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="fcd-Y0-aZi"/>
-                            <constraint firstItem="Xrf-ic-YFn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="gOQ-Te-hdd"/>
-                            <constraint firstItem="xNE-2z-Tb0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="sU4-oF-ZHm"/>
                         </constraints>
                     </view>
                     <connections>
@@ -76,6 +86,71 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="173" y="310"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="A1e-XA-1J6">
+            <objects>
+                <viewController id="sYw-XR-Ugj" customClass="SettingsViewController" customModule="HipHopInspiration" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vsc-EG-cNQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="OaZ-Vy-S89"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TZ7-ZD-qKV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ya0-xq-R47">
+                                <rect key="frame" x="32" y="28" width="256" height="256"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="256" id="gz8-y0-cfl"/>
+                                    <constraint firstAttribute="width" constant="256" id="szH-2c-krV"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="471405624.085868">
+                                    <!--2015-12-10 02:00:24 +0000-->
+                                </date>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sw8-Qc-DcA">
+                                <rect key="frame" x="52" y="305" width="216" height="61"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="216" id="Vsy-Ia-V7N"/>
+                                    <constraint firstAttribute="height" constant="61" id="spR-Il-5ye"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <state key="normal" title="Save &amp; Return">
+                                    <color key="titleColor" red="0.29803921570000003" green="0.68627450980000004" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveDailyTime:" destination="sYw-XR-Ugj" eventType="touchUpInside" id="wwQ-px-2s9"/>
+                                    <segue destination="BYZ-38-t0r" kind="modal" identifier="SetTime" modalTransitionStyle="crossDissolve" id="Td4-Io-0Lx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ya0-xq-R47" firstAttribute="centerX" secondItem="TZ7-ZD-qKV" secondAttribute="centerX" id="2dk-Xv-YFS"/>
+                            <constraint firstItem="Ya0-xq-R47" firstAttribute="top" secondItem="Vsc-EG-cNQ" secondAttribute="bottom" constant="8" id="Aat-u9-rNd"/>
+                            <constraint firstItem="sw8-Qc-DcA" firstAttribute="top" secondItem="Ya0-xq-R47" secondAttribute="bottom" constant="21" id="NKL-8P-Br9"/>
+                            <constraint firstItem="sw8-Qc-DcA" firstAttribute="centerX" secondItem="TZ7-ZD-qKV" secondAttribute="centerX" id="WPq-NV-L32"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="AlH-n3-piQ"/>
+                    <connections>
+                        <outlet property="timeToSetDaily" destination="Ya0-xq-R47" id="SHY-y6-RPV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MJx-Xw-Gcy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="579" y="309"/>
         </scene>
     </scenes>
 </document>

@@ -10,12 +10,13 @@
 		833CA37A1BF405CB007F39D7 /* FactBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833CA3791BF405CB007F39D7 /* FactBook.swift */; };
 		83B24F321BF6135A008DE84D /* ColorWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B24F311BF6135A008DE84D /* ColorWheel.swift */; };
 		83CB74441BF034F900AE413D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CB74431BF034F900AE413D /* AppDelegate.swift */; };
-		83CB74461BF034F900AE413D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CB74451BF034F900AE413D /* ViewController.swift */; };
+		83CB74461BF034F900AE413D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CB74451BF034F900AE413D /* MainViewController.swift */; };
 		83CB74491BF034F900AE413D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CB74471BF034F900AE413D /* Main.storyboard */; };
 		83CB744B1BF034F900AE413D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83CB744A1BF034F900AE413D /* Assets.xcassets */; };
 		83CB744E1BF034F900AE413D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CB744C1BF034F900AE413D /* LaunchScreen.storyboard */; };
 		83CB74591BF034F900AE413D /* FunFactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CB74581BF034F900AE413D /* FunFactsTests.swift */; };
 		83CB74641BF034F900AE413D /* FunFactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CB74631BF034F900AE413D /* FunFactsUITests.swift */; };
+		83E3DEF31C190F72001F85A1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E3DEF21C190F72001F85A1 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,7 @@
 		83B24F311BF6135A008DE84D /* ColorWheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorWheel.swift; sourceTree = "<group>"; };
 		83CB74401BF034F900AE413D /* HipHopInspiration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HipHopInspiration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83CB74431BF034F900AE413D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		83CB74451BF034F900AE413D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		83CB74451BF034F900AE413D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		83CB74481BF034F900AE413D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83CB744A1BF034F900AE413D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83CB744D1BF034F900AE413D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,6 +53,7 @@
 		83CB74631BF034F900AE413D /* FunFactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunFactsUITests.swift; sourceTree = "<group>"; };
 		83CB74651BF034F900AE413D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83CB74711BF037D300AE413D /* Scratchpad.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Scratchpad.playground; sourceTree = "<group>"; };
+		83E3DEF21C190F72001F85A1 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +116,8 @@
 				83CB74431BF034F900AE413D /* AppDelegate.swift */,
 				833CA3791BF405CB007F39D7 /* FactBook.swift */,
 				83B24F311BF6135A008DE84D /* ColorWheel.swift */,
-				83CB74451BF034F900AE413D /* ViewController.swift */,
+				83CB74451BF034F900AE413D /* MainViewController.swift */,
+				83E3DEF21C190F72001F85A1 /* SettingsViewController.swift */,
 				83CB74471BF034F900AE413D /* Main.storyboard */,
 				83CB744A1BF034F900AE413D /* Assets.xcassets */,
 				83CB744C1BF034F900AE413D /* LaunchScreen.storyboard */,
@@ -274,8 +277,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				833CA37A1BF405CB007F39D7 /* FactBook.swift in Sources */,
-				83CB74461BF034F900AE413D /* ViewController.swift in Sources */,
+				83CB74461BF034F900AE413D /* MainViewController.swift in Sources */,
 				83CB74441BF034F900AE413D /* AppDelegate.swift in Sources */,
+				83E3DEF31C190F72001F85A1 /* SettingsViewController.swift in Sources */,
 				83B24F321BF6135A008DE84D /* ColorWheel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
