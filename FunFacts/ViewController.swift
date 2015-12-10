@@ -29,6 +29,10 @@ class ViewController: UIViewController {
         
         localNotification.fireDate = NSDate(timeIntervalSinceNow: 10)
         
+        localNotification.applicationIconBadgeNumber = 1
+        
+        localNotification.soundName = UILocalNotificationDefaultSoundName
+        
         UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
     }
 
