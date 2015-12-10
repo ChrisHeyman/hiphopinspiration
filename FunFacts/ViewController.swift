@@ -20,6 +20,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         funFactLabel.text = factBook.randomFact()
+        
+        var localNotification:UILocalNotification = UILocalNotification()
+        
+        localNotification.alertAction = "Testing notifications on iOS8"
+        
+        localNotification.alertBody = "Woww it works!!"
+        
+        localNotification.fireDate = NSDate(timeIntervalSinceNow: 10)
+        
+        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
     }
 
     override func didReceiveMemoryWarning() {

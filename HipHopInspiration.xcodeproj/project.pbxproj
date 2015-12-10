@@ -209,6 +209,7 @@
 				TargetAttributes = {
 					83CB743F1BF034F900AE413D = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = C4R4Y389S3;
 					};
 					83CB74531BF034F900AE413D = {
 						CreatedOnToolsVersion = 7.1;
@@ -415,10 +416,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FunFacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.acouplebrews.HipHopInspiration;
 				PRODUCT_NAME = HipHopInspiration;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -426,10 +430,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FunFacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.acouplebrews.HipHopInspiration;
 				PRODUCT_NAME = HipHopInspiration;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
