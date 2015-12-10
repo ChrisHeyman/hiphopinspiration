@@ -20,51 +20,8 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "showLocalNotification", name: "DisplayNotification", object: nil)
-        
-//        if let scheduledLocalNotifications = UIApplication.sharedApplication().scheduledLocalNotifications {
-//            for notification in scheduledLocalNotifications { // loop through notifications...
-//                print(notification)
-//                UIApplication.sharedApplication().cancelLocalNotification(notification)
-////                if (notification.userInfo!["UUID"] as! String == item.UUID) { // ...and cancel the notification that corresponds to this TodoItem instance (matched by UUID)
-////                    UIApplication.sharedApplication().cancelLocalNotification(notification) // there should be a maximum of one match on UUID
-////                    break
-////                }
-//            }
-//        }
-        
-        // Do any additional setup after loading the view, typically from a nib.
         funFactLabel.text = factBook.randomFact()
         
-//        var timeFire: NSDateComponents = NSDateComponents()
-//        timeFire.hour = 7
-//        timeFire.minute = 15
-//        timeFire.timeZone = NSTimeZone.defaultTimeZone()
-//        
-//        var calender: NSCalendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
-//        var fireTime: NSDate = calender.dateFromComponents(timeFire)!
-//        
-//        var localNotification:UILocalNotification = UILocalNotification()
-//        localNotification.alertAction = "Testing notifications on iOS8"
-//        localNotification.alertBody = "Woww it works!!"
-//        localNotification.fireDate = fireTime
-//        localNotification.applicationIconBadgeNumber = 1
-//        localNotification.soundName = UILocalNotificationDefaultSoundName
-//        localNotification.repeatInterval = NSCalendarUnit.Day
-//        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
-        
-//        var localNotification:UILocalNotification = UILocalNotification()
-//        
-//        localNotification.alertAction = "Testing notifications on iOS8"
-//        
-//        localNotification.alertBody = "Woww it works!!"
-//        
-//        localNotification.fireDate = NSDate(timeIntervalSinceNow: 10)
-//        
-//        localNotification.applicationIconBadgeNumber = 1
-//        
-//        localNotification.soundName = UILocalNotificationDefaultSoundName
-//        
-//        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
     }
     
     func showLocalNotification() {

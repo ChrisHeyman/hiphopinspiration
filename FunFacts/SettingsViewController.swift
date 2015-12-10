@@ -58,14 +58,6 @@ class SettingsViewController: UIViewController {
         localNotification.soundName = UILocalNotificationDefaultSoundName
         localNotification.repeatInterval = NSCalendarUnit.Day
         UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
-
-//        let localNotification:UILocalNotification = UILocalNotification()
-//        localNotification.alertAction = "Testing notifications on iOS8"
-//        localNotification.alertBody = "Woww it works!!"
-//        localNotification.fireDate = NSDate(timeIntervalSinceNow: 5)
-//        localNotification.applicationIconBadgeNumber = 1
-//        localNotification.soundName = UILocalNotificationDefaultSoundName
-//        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
     
     }
     /*
